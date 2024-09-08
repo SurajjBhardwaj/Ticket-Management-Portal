@@ -23,7 +23,7 @@ export default function Home() {
       try {
 
         console.log("process.env.URL", process.env.NEXT_PUBLIC_API_URL);
-        const response = await fetch(process.env.NEXT_PUBLIC_API_URL);
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/user`);
         console.log("response", response);
         const json = await response.json();
         console.log(json);

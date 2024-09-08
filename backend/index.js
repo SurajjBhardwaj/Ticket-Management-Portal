@@ -7,8 +7,9 @@ app.use(cors());
 
 const port = process.env.PORT || 5001; 
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
-app.get("/", (req, res) => {
+app.get("/user", (req, res) => {
    res.status(200).send({ data: "Hello World" });
 });
  
