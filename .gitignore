@@ -1,0 +1,13 @@
+.env.*
+package-lock.json
+node_modules/
+
+backend/.env.*
+backend/.env
+
+
+frontend/.env
+frontend/node_modules/
+frontend/package-lock.json
+frontend/.env.*
+frontend/.env
