@@ -21,7 +21,9 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:5000');
+
+        console.log("process.env.URL", process.env.NEXT_PUBLIC_API_URL);
+        const response = await fetch(process.env.NEXT_PUBLIC_API_URL);
         console.log("response", response);
         const json = await response.json();
         console.log(json);
