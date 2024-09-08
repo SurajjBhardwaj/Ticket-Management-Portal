@@ -5,7 +5,6 @@ const cors = require("cors");
 const app = express();
 app.use(cors());
 
-const port = process.env.PORT || 3000; 
 
 app.get("/", (req, res) => res.send("Express on Vercel"));
 
@@ -14,9 +13,8 @@ app.get("/user", (req, res) => {
 });
  
  
-app.listen(port, () =>{ 
-   console.log(process.env.PORT);
-   console.log(`Server running on port ${port} 🔥`)
+app.listen(3000, () =>{ 
+   console.log(`Server running on port 3000 🔥`)
 });
   
 
